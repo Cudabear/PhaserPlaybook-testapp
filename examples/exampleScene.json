@@ -1,8 +1,9 @@
 {
-	"actors": [
-		{
-			"sprite_key": "mySprite",
-			"initial_position": {"x": 50, "y": 50}
-		}
-	]
+    "actors": [
+        {
+            "sprite_key": "mySprite",
+            "actor_id": "myActor",
+            "initial_position": {"x": 50, "y": 50}
+        }
+    ]
 }
