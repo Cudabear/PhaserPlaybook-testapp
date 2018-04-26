@@ -13,14 +13,17 @@ ExampleScene = new Phaser.Class({
 
         //playbooks are just treated as JSON objects
         this.load.json('example-scene', '../examples/exampleScene.json');
+
+        //playbooks do not load in sprites for you
+        this.load.spritesheet('actor-guy', '../res/guy.png', {frameWidth: 24, frameHeight: 48});
     },
 
     create: function(){
         //install the playbook on this scene
         this.sys.install('PhaserPlaybook');
 
-        //set the playbook you want to run
-        this.sys.phaserPlaybook.setPlaybook('example-scene');
+        //add a playbook you want to run
+        this.sys.phaserPlaybook.addPlaybook('example-scene');
     },
 
     update: function(){

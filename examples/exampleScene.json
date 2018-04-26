@@ -1,9 +1,25 @@
 {
-    "actors": [
+    "actors": {
+        "myActor": {
+            "sprite_key": "actor-guy"
+        }
+    },
+    "directions": [
         {
-            "sprite_key": "mySprite",
             "actor_id": "myActor",
-            "initial_position": {"x": 50, "y": 50}
+            "type": "create_actor",
+            "parameters": {
+                "initial_position": {"x": 50, "y": 50},
+                "initial_frame": 0
+            }
+        },
+        {
+            "actor_id": "myActor",
+            "type": "move_actor",
+            "parameters": {
+                "new_position": {"x": 250, "y": 250},
+                "duration": 2500
+            }
         }
     ]
 }
