@@ -1,4 +1,7 @@
 {
+    "defaults": {
+        "movement_speed": 100
+    },
     "actors": {
         "myActor": {
             "sprite_key": "actor-guy"
@@ -15,10 +18,37 @@
         },
         {
             "actor_id": "myActor",
+            "type": "play_animation",
+            "parameters": {
+                "animation_key": "actor-walk"
+            }
+        },
+        {
+            "actor_id": "myActor",
             "type": "move_actor",
             "parameters": {
-                "new_position": {"x": 250, "y": 250},
+                "new_position": {"x": 250, "y": 250}
+            }
+        },
+        {
+            "type": "delay_playbook",
+            "parameters": {
                 "duration": 2500
+            }
+        },
+        {
+            "actor_id": "myActor",
+            "type": "move_actor",
+            "parameters": {
+                "new_position": {"x": 260, "y": 10},
+                "duration": 500
+            }
+        },
+        {
+            "actor_id": "myActor",
+            "type": "teleport_actor",
+            "parameters": {
+                "new_position": {"x": 500, "y": 400}
             }
         }
     ]
