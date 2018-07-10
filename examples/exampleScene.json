@@ -22,8 +22,7 @@
             "type": "say_line",
             "parameters": {
                 "line": "Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem",
-                "duration": 2500,
-                "block_scene": false
+                "duration": 2500
             }
         },
         {
@@ -31,7 +30,6 @@
             "type": "say_line",
             "parameters": {
                 "line_id": "myActor-line-1",
-                "duration": 2500,
                 "block_scene": false
             }
         },
